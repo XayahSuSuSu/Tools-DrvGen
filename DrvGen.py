@@ -23,6 +23,9 @@ sys.dont_write_bytecode = True
 sys.path.append('.')
 sys.path.append('..')
 
+reload(sys)
+sys.setdefaultencoding('utf8')
+
 from obj.ChipObj import ChipObj
 from obj.ChipObj import MT6797
 from obj.ChipObj import MT6757
